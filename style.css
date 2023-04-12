@@ -1,0 +1,32 @@
+*{padding:0;
+    margin:0;
+}
+.timp{
+    background-color: rgb(26, 26, 56);
+    min-height: 100vh;
+    width:100%;
+}
+
+.container{
+    position: relative;
+}
+
+.box1{
+    background-color: rgba(120, 120, 173, 0.705);
+    width: 443px;
+    height: 161.36px;
+    border-radius: 52px;
+    position: absolute;
+    left:156px;
+    top:322px;
+}
+
+.box2{
+    background-color: rgba(120, 173, 138, 0.705);
+    width: 443px;
+    height: 161px;
+    border-radius: 52px;
+    position: absolute;
+    left:796px;
+    top:313px;
+}
