@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CityChrono1</title>
+    <title>CityChrono</title>
     <link rel="stylesheet" href="css/style.css">
      <!-- لينك للايقونات عشان تظهر -->
      <script src="https://kit.fontawesome.com/df073e5b90.js" crossorigin="anonymous"></script>
@@ -13,36 +13,47 @@
 
     <section class="timpsec">
 
-        <!-- test search -->
-        <div class="search">
-            <input type="text" placeholder="enter city name" spellcheck="false">
-            <button><img src="image/search.avif"></button>
-            <!-- <div class="content">
+        <!-- search -->
+        <div class="search_box">
+            <div class="content">
                 <form action='' method="get" class="search_bar" id="searchForm">
                     <input type="text" id="searchInput" class="input" placeholder="Search Citys ?">
                     <button type="submit" class="btn"><i class="fa fa-search"></i></button>
                     <span id="text">CityChrono</span>
     
                 </form>
-            </div> -->
-            <h2 class="city" style="color:white">Gaza</h2>         
+            </div>       
         </div>
-        <!-- end of test -->
+        <!-- end of search -->
 
-
-
-
-
+       <!-- contain the time and weather boxes -->
         <div class="container">
             <!-- time box 1 -->
             <div class="time">
-            
+                <div class="icon_line">
+                    <div class="iconOfTime"><i class="far fa-clock"></i></div>
+                    <div class="verticalLine"></div>
+                </div>
+
+                <div class="detailsTime">
+                    <p class="city">New York, US</p> 
+                    <p class="currentTimeInHour">10:</p>
+                    <p class="currentTimeInMin">20</p> 
+                </div>
+
+                <div class="statusTime">AM</div>
+               
             </div>
                
+
             <!-- weather box 2 -->
             <div class="weather">
                 <div class="details">
-                    <p class="day">Tuesday, <span class="date"> 14 May</span></p>
+                    
+                    <p class="day">Tuesday, </p>
+                    <p class="date_month"> May</p>
+                    <p class="date_num"> 14 </p>
+                                       
                     <div class="temper">
                         <p class="temp">29</p> <div class=cel>°C</div>
                     </div>
@@ -60,6 +71,5 @@
 <script src="js/app.js">
    
 </script>
-
 </body>
 </html>
