@@ -16,22 +16,22 @@
 /* -------------------weather box---------------------------*/
 
 .weather{
-    background-color: rgba(120, 173, 138, 0.705);
+    background-color: #546a7e59;
     width: 443px;
     height: 161px;
     border-radius: 52px;
     position: absolute;
     left:796px;
-    top:313px;
+    /* top:131px; */
     display: flex;
+    box-shadow: 1px 1px 2px 2px #00000073;
 }
 
-.statusPicture img{
+.statusPicture img {
     position: absolute;
-    top:50px;
-    left:257px;
-    width:175px;
-    height: 119px;
+    top: 45px;
+    left: 318px;
+    width: 25%;
 }
 
 .details{
@@ -44,6 +44,9 @@
 
 .day{font-size: large;}
 
+.date_month{position: absolute;left:140px;top:2px;}
+.date_num{position: absolute;left:115px;top:3px;}
+
 .temper{position: relative;}
 
 .temp{
@@ -54,27 +57,87 @@
 .cel{
     position: absolute;
     top: 12px;
-    left: 88px;
+    left: 83px;
 }
 
 .status{
-    margin-left: 28px;
+    /* margin-left: 28px; */
     font-size: 21px;
 }
 
+/* ------------------------time box ------------------------- */
+.time{
+    background-color: #546a7e59;
+    width: 443px;
+    height: 161.36px;
+    border-radius: 52px;
+    position: absolute;
+    left:156px;
+    /* top:131px; */
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 1px 2px 2px #00000073;
+}
 
-/* test */
+.icon_line{display: flex;}
+ 
+.iconOfTime{
+    position: absolute;
+    top:25px;
+    left:60px;
+    color:#fff;
+    font-size: 30px;
+    
+}  
 
-.search button{width: 60px;height: 60px;}
-.search button img{width: 40px;}
-/* .content {
+.verticalLine{
+    position: absolute;
+    width:1px;
+    height: 25px;
+    background-color: white;
+    top:22px;
+    left:105px;
+}
+
+.detailsTime{
+    position: absolute;
+    top:31px;
+    left:125px;
+    color:#fff;
+    font-weight: bolder;
+}
+
+.city{font-size: larger;}
+
+.currentTimeInHour {
+    font-size: 55px;
+    position: absolute;
+    left: -4px;
+}
+
+.currentTimeInMin{
+    font-size: 55px;
+    position: absolute;
+    left: 80px;
+}
+
+.statusTime{
+    rotate:270deg;
+    color:#fff;
+    margin-left: 160px;
+    font-size: large;
+}
+/* end time_box */
+
+
+/* search -------------------------------------*/
+
+.content {
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 3%;
-    background-color: #1E1E1E;
     display: flex;
     justify-content: right;
-
 }
 
 .search_bar {
@@ -84,7 +147,6 @@
     background: #2e2c2c;
     display: flex;
     align-items: center;
-
     border-radius: 65px;
     padding: 16px 9px;
 }
@@ -98,14 +160,9 @@
     font-family: 'Poppins';
     font-size: 20px;
     color: #2e2c2c;
-
 }
 
-::placeholder {
-    color: #6d6868;
-
-
-}
+::placeholder {color: #6d6868;} 
 
 .search_bar button {
     border: 0;
@@ -114,16 +171,10 @@
     height: 27px;
     background: #f3f0f3;
     cursor: pointer;
-
-
 }
 
-.search_bar button i {
-    width: 30px;
-
-
-}
-
+.search_bar button i { width: 30px;}
+   
 .search_bar #text {
     display: flex;
     justify-content: left;
@@ -138,20 +189,28 @@
     border-radius: 5px;
     line-height: 52px;
     letter-spacing: 4px;
-} */
-/* end test */
-
-
-
-
-
-/* ------------------------time box ------------------------- */
-.time{
-    background-color: rgba(120, 120, 173, 0.705);
-    width: 443px;
-    height: 161.36px;
-    border-radius: 52px;
-    position: absolute;
-    left:156px;
-    top:322px;
 }
+/* end search_box.............................................*/
+
+
+
+/* Media queries for mobile screens */
+@media screen and (max-width: 767px) {
+    .time{left: 37px; border-radius: 72px;  top: 40px;  width: 340px; height: 135px;}
+    .weather{border-radius: 72px;width: 340px;left: 37px; top: 194px; height: 135px;}
+    .statusPicture img{left: 253px; width: 24%; top: 42px;}
+    .statusTime{margin-left: 391px;}
+    .temp{font-size: 40px;}
+}
+
+
+
+/* for tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+   .time{ width:320px; top:100px; left:44px; }
+   .weather{ width: 320px; top:100px; left:400px;}
+   .statusPicture img{ left: 225px; top: 62px; width: 30%;}
+   .statusTime{margin-left: 400px;}
+
+}
+
